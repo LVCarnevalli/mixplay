@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MixPlay</string>
+    
+    <string name="ui_ok">OK</string>
+    <string name="dialog_error_title">Erro</string>
+    
+    <string name="notif_message_ok">Transcoding Finished</string>
+    <string name="notif_message_fail">Transcoding failed</string>
+    <string name="notif_message_stopping">Stopping Transcoding</string>
+    <string name="notif_message_stopped">Transcoding stopped</string>
+    <string name="notif_progress_title">Transcoding is running</string>
+    <string name="notif_progress_desc">Click to see progress log</string>
+    
+    <string name="trascoding_running_message">Can\'t start new wizard while transcoding is in progress.</string>
+    <string name="trascoding_running_background_message">Transcoding is running in the background.</string>
+    
+    <string name="progress_dialog_title">Transcoding Status</string>
+    <string name="progress_dialog_message">teste</string>
+    
+    <string name="selecionarVideoButton">Video</string>
+    <string name="selecionarAudioButton">Audio</string>
+    <string name="salvarButton">Salvar</string>
+
+</resources>

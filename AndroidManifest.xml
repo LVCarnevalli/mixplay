@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.android.mixplay"
+    android:versionCode="1000"
+    android:versionName="1.0" >
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" >
+        
+        <activity
+            android:name="br.com.android.mixplay.MixPlay"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="br.com.android.mixplay.utils.Gallery" />
+        <activity android:name="br.com.android.mixplay.utils.SeekBar" />
+               
+        <service
+            android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge"
+            android:exported="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge" />
+            </intent-filter>
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="18" />
+
+</manifest>
